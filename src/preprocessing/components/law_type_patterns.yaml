@@ -1,0 +1,11 @@
+zákon:
+  - "\\bz(?:\\.|ákon)?\\b"
+
+nařízení vlády:
+  - "\\bnař[\\.\\s]*vl[\\.\\s]*\\b"
+
+vyhláška:
+  - "\\bvyhl(?:\\.|áška)?\\b"
+
+ústavní zákon:
+  - "\\búst(?:\\.|avní)?\\s*z(?:\\.|ákon)?\\b"
