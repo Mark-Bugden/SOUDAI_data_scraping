@@ -41,10 +41,10 @@ tests/
 ## Pipeline Overview
 
 1. **Decision Metadata Collection (Stage 1)**  
-   The `rozhodnuti` scraper downloads and aggregates JSON metadata of court decisions, filters them for known courts and valid case numbers, and saves a preprocessed CSV file.
+   The `rozhodnuti` scraper downloads the JSON metadata of court decisions.
 
 2. **Case Timeline Augmentation (Stage 2)**  
-   The `infosoud` scraper takes the preprocessed CSV, enriches it with timeline events (such as initiation date, hearing date, and resolution date) from infosoud.justice.cz, and saves a checkpointed augmented CSV. Checkpointing ensures recovery in case of interruption.
+   The `infosoud` scraper aggregates and preprocesses the JSON metadata for the court decisions, performs some preliminary preprocessing, and saves the processed data as a .csv file. It then takes the preprocessed CSV, enriches it with timeline events (such as initiation date, hearing date, and resolution date) from infosoud.justice.cz, and saves a checkpointed augmented CSV. Checkpointing ensures recovery in case of interruption, as this step can take quite a long time.
 
 3. **Data cleaning and preprocessing (Stage 3)**  
    The preprocessing script performs a final cleaning and preprocessing pass over the dataset to ensure dataset is ready for downstream machine learning tasks.
