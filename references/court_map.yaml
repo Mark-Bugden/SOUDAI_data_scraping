@@ -1,0 +1,559 @@
+# =====================
+# Nejvyšší soudy (Supreme Courts)
+# =====================
+
+- name: "Nejvyšší soud"
+  typSoudu: "ns"
+
+# =====================
+# Vrchní soudy (High Courts)
+# =====================
+
+- name: "Vrchní soud v Olomouci"
+  typSoudu: "os"
+  krajOrg: "VSSEMOL"
+  Org: ""
+
+- name: "Vrchní soud v Praze"
+  typSoudu: "os"
+  krajOrg: "VSPHAA"
+  Org: ""
+
+# =====================
+# Krajské a Okresni soudy (Regional and District Courts)
+# =====================
+# Note that branches (pobočka) are grouped under the same regional court in the infosoud URL
+# This means that multiple different district and regional courts in the dataframe point to the same URL
+
+
+# =====================
+# Brno
+# =====================
+- name: "Krajský soud v Brně"
+  typSoudu: "os"
+  krajOrg: "KSJIMBM"
+  Org: ""
+
+- name: "Městský soud v Brně"
+  typSoudu: "os"
+  krajOrg: "KSJIMBM"
+  Org: "OSJIMBM"
+
+- name: "Okresní soud v Blansku"
+  typSoudu: "os"
+  krajOrg: "KSJIMBM"
+  Org: "OSJIMBK"
+
+- name: "Okresní soud Brno-Venkov"
+  typSoudu: "os"
+  krajOrg: "KSJIMBM"
+  Org: "OSJIMBO"
+  
+- name: "Okresní soud v Břeclavi"
+  typSoudu: "os"
+  krajOrg: "KSJIMBM"
+  Org: "OSJIMBV"
+
+- name: "Okresní soud v Hodoníně"
+  typSoudu: "os"
+  krajOrg: "KSJIMBM"
+  Org: "OSJIMHO"
+
+- name: "Okresní soud v Jihlavě"
+  typSoudu: "os"
+  krajOrg: "KSJIMBM"
+  Org: "OSJIMJI"
+
+- name: "Okresní soud v Kroměříži"
+  typSoudu: "os"
+  krajOrg: "KSJIMBM"
+  Org: "OSJIMKM"
+
+- name: "Okresní soud v Prostějově"
+  typSoudu: "os"
+  krajOrg: "KSJIMBM"
+  Org: "OSJIMPV"
+
+- name: "Okresní soud v Třebíči"
+  typSoudu: "os"
+  krajOrg: "KSJIMBM"
+  Org: "OSJIMTR"
+
+- name: "Okresní soud v Uherském Hradišti"
+  typSoudu: "os"
+  krajOrg: "KSJIMBM"
+  Org: "OSJIMUH"
+
+- name: "Okresní soud ve Vyškově"
+  typSoudu: "os"
+  krajOrg: "KSJIMBM"
+  Org: "OSJIMVY"
+
+- name: "Okresní soud ve Zlíně"
+  typSoudu: "os"
+  krajOrg: "KSJIMBM"
+  Org: "OSJIMZL"
+
+- name: "Okresní soud ve Znojmě"
+  typSoudu: "os"
+  krajOrg: "KSJIMBM"
+  Org: "OSJIMZN"
+
+- name: "Okresní soud ve Žďáru nad Sázavou"
+  typSoudu: "os"
+  krajOrg: "KSJIMBM"
+  Org: "OSJIMZR"
+
+
+# =====================
+# Hradec Králové
+# =====================
+- name: "Krajský soud v Hradci Králové"
+  typSoudu: "os"
+  krajOrg: "KSVYCHK"
+  Org: ""
+
+- name: "Krajský soud v Hradci Králové, pobočka Pardubice"
+  typSoudu: "os"
+  krajOrg: "KSVYCHK"
+  Org: ""
+
+- name: "Okresní soud v Chrudimi"
+  typSoudu: "os"
+  krajOrg: "KSVYCHK"
+  Org: "OSVYCCR"
+
+- name: "Okresní soud v Havlíčkově Brodě"
+  typSoudu: "os"
+  krajOrg: "KSVYCHK"
+  Org: "OSVYCHB"
+
+- name: "Okresní soud v Hradci Králové"
+  typSoudu: "os"
+  krajOrg: "KSVYCHK"
+  Org: "OSVYCHK"
+
+- name: "Okresní soud v Jičíně"
+  typSoudu: "os"
+  krajOrg: "KSVYCHK"
+  Org: "OSVYCJC"
+
+- name: "Okresní soud v Náchodě"
+  typSoudu: "os"
+  krajOrg: "KSVYCHK"
+  Org: "OSVYCNA"
+
+- name: "Okresní soud v Pardubicích"
+  typSoudu: "os"
+  krajOrg: "KSVYCHK"
+  Org: "OSVYCPA"
+
+- name: "Okresní soud v Rychnově nad Kněžnou"
+  typSoudu: "os"
+  krajOrg: "KSVYCHK"
+  Org: "OSVYCRK"
+
+- name: "Okresní soud v Semilech"
+  typSoudu: "os"
+  krajOrg: "KSVYCHK"
+  Org: "OSVYCSM"
+
+- name: "Okresní soud ve Svitavách"
+  typSoudu: "os"
+  krajOrg: "KSVYCHK"
+  Org: "OSVYCSY"
+
+- name: "Okresní soud v Trutnově"
+  typSoudu: "os"
+  krajOrg: "KSVYCHK"
+  Org: "OSVYCTU"
+
+- name: "Okresní soud v Ústí nad Orlicí"
+  typSoudu: "os"
+  krajOrg: "KSVYCHK"
+  Org: "OSVYCUO"
+
+# =====================
+# Ostrava
+# =====================
+
+- name: "Krajský soud v Ostravě"
+  typSoudu: "os"
+  krajOrg: "KSSEMOS"
+  Org: ""
+
+- name: "Krajský soud v Ostravě, pobočka Olomouc"
+  typSoudu: "os"
+  krajOrg: "KSSEMOS"
+  Org: ""
+
+- name: "Okresní soud v Bruntále"
+  typSoudu: "os"
+  krajOrg: "KSSEMOS"
+  Org: "OSSEMBR"
+
+- name: "Okresní soud v Bruntále, pobočka Krnov"
+  typSoudu: "os"
+  krajOrg: "KSSEMOS"
+  Org: "OSSEMBR"
+
+- name: "Okresní soud ve Frýdku-Místku"
+  typSoudu: "os"
+  krajOrg: "KSSEMOS"
+  Org: "OSSEMFM"
+
+- name: "Okresní soud v Jeseníku"
+  typSoudu: "os"
+  krajOrg: "KSSEMOS"
+  Org: "OSSEMJE"
+  
+- name: "Okresní soud v Karviné"
+  typSoudu: "os"
+  krajOrg: "KSSEMOS"
+  Org: "OSSEMKA"
+
+- name: "Okresní soud v Karviné, pobočka Havířov"
+  typSoudu: "os"
+  krajOrg: "KSSEMOS"
+  Org: "OSSEMKA"
+
+- name: "Okresní soud v Novém Jičíně"
+  typSoudu: "os"
+  krajOrg: "KSSEMOS"
+  Org: "OSSEMNJ"
+
+- name: "Okresní soud v Olomouci"
+  typSoudu: "os"
+  krajOrg: "KSSEMOS"
+  Org: "OSSEMOC"
+
+- name: "Okresní soud v Opavě"
+  typSoudu: "os"
+  krajOrg: "KSSEMOS"
+  Org: "OSSEMOP"
+
+- name: "Okresní soud v Ostravě"
+  typSoudu: "os"
+  krajOrg: "KSSEMOS"
+  Org: "OSSEMOS"
+
+- name: "Okresní soud v Přerově"
+  typSoudu: "os"
+  krajOrg: "KSSEMOS"
+  Org: "OSSEMPR"
+
+- name: "Okresní soud ve Vsetíně"
+  typSoudu: "os"
+  krajOrg: "KSSEMOS"
+  Org: "OSSEMVS"
+
+- name: "Okresní soud ve Vsetíně, pobočka Valašské Meziřičí"
+  typSoudu: "os"
+  krajOrg: "KSSEMOS"
+  Org: "OSSEMVS"
+
+- name: "Okresní soud v Šumperku"
+  typSoudu: "os"
+  krajOrg: "KSSEMOS"
+  Org: "OSSEMSU"
+
+# =====================
+# Ostrava
+# =====================
+
+- name: "Krajský soud v Plzni"
+  typSoudu: "os"
+  krajOrg: "KSZPCPM"
+  Org: ""
+
+- name: "Okresní soud v Chebu"
+  typSoudu: "os"
+  krajOrg: "KSZPCPM"
+  Org: "OSZPCCH"
+
+- name: "Okresní soud v Domažlicích"
+  typSoudu: "os"
+  krajOrg: "KSZPCPM"
+  Org: "OSZPCDO"
+
+- name: "Okresní soud v Karlových Varech"
+  typSoudu: "os"
+  krajOrg: "KSZPCPM"
+  Org: "OSZPCKV"
+
+- name: "Okresní soud v Klatovech"
+  typSoudu: "os"
+  krajOrg: "KSZPCPM"
+  Org: "OSZPCKT"
+
+- name: "Okresní soud Plzeň-město"
+  typSoudu: "os"
+  krajOrg: "KSZPCPM"
+  Org: "OSZPCPM"
+
+- name: "Okresní soud Plzeň-jih"
+  typSoudu: "os"
+  krajOrg: "KSZPCPM"
+  Org: "OSZPCPJ"
+
+- name: "Okresní soud Plzeň-sever"
+  typSoudu: "os"
+  krajOrg: "KSZPCPM"
+  Org: "OSZPCPS"
+
+- name: "Okresní soud v Rokycanech"
+  typSoudu: "os"
+  krajOrg: "KSZPCPM"
+  Org: "OSZPCRO"
+
+- name: "Okresní soud v Sokolově"
+  typSoudu: "os"
+  krajOrg: "KSZPCPM"
+  Org: "OSZPCSO"
+
+- name: "Okresní soud v Tachově"
+  typSoudu: "os"
+  krajOrg: "KSZPCPM"
+  Org: "OSZPCTC"
+
+# =====================
+# Praha
+# =====================
+
+- name: "Krajský soud v Praze"
+  typSoudu: "os"
+  krajOrg: "KSSTCAB"
+  Org: ""
+
+- name: "Okresní soud v Benešově"
+  typSoudu: "os"
+  krajOrg: "KSSTCAB"
+  Org: "OSSTCBN"
+
+- name: "Okresní soud v Berouně"
+  typSoudu: "os"
+  krajOrg: "KSSTCAB"
+  Org: "OSSTCBE"
+
+- name: "Okresní soud v Kladně"
+  typSoudu: "os"
+  krajOrg: "KSSTCAB"
+  Org: "OSSTCKL"
+
+- name: "Okresní soud v Kolíně"
+  typSoudu: "os"
+  krajOrg: "KSSTCAB"
+  Org: "OSSTCKO"
+
+- name: "Okresní soud v Kutné Hoře"
+  typSoudu: "os"
+  krajOrg: "KSSTCAB"
+  Org: "OSSTCKH"
+
+- name: "Okresní soud v Mladé Boleslavi"
+  typSoudu: "os"
+  krajOrg: "KSSTCAB"
+  Org: "OSSTCMB"
+
+- name: "Okresní soud v Mělníku"
+  typSoudu: "os"
+  krajOrg: "KSSTCAB"
+  Org: "OSSTCME"
+
+- name: "Okresní soud v Nymburce"
+  typSoudu: "os"
+  krajOrg: "KSSTCAB"
+  Org: "OSSTCNB"
+
+- name: "Okresní soud Praha-východ"
+  typSoudu: "os"
+  krajOrg: "KSSTCAB"
+  Org: "OSSTCPY"
+
+- name: "Okresní soud Praha-západ"
+  typSoudu: "os"
+  krajOrg: "KSSTCAB"
+  Org: "OSSTCPZ"
+
+- name: "Okresní soud v Příbrami"
+  typSoudu: "os"
+  krajOrg: "KSSTCAB"
+  Org: "OSSTCPB"
+
+- name: "Okresní soud v Rakovníku"
+  typSoudu: "os"
+  krajOrg: "KSSTCAB"
+  Org: "OSSTCRA"
+
+# =====================
+# Ústí nad Labem
+# =====================
+
+- name: "Krajský soud v Ústí nad Labem"
+  typSoudu: "os"
+  krajOrg: "KSSCEUL"
+  Org: ""
+
+- name: "Krajský soud v Ústí nad Labem, pobočka Liberec"
+  typSoudu: "os"
+  krajOrg: "KSSCEUL"
+  Org: ""
+
+- name: "Okresní soud v Chomutově"
+  typSoudu: "os"
+  krajOrg: "KSSCEUL"
+  Org: "OSSCECV"
+
+- name: "Okresní soud v Děčíně"
+  typSoudu: "os"
+  krajOrg: "KSSCEUL"
+  Org: "OSSCEDC"
+
+- name: "Okresní soud v Jablonci nad Nisou"
+  typSoudu: "os"
+  krajOrg: "KSSCEUL"
+  Org: "OSSCEJN"
+
+- name: "Okresní soud v Liberci"
+  typSoudu: "os"
+  krajOrg: "KSSCEUL"
+  Org: "OSSCELB"
+
+- name: "Okresní soud v Litoměřicích"
+  typSoudu: "os"
+  krajOrg: "KSSCEUL"
+  Org: "OSSCELT"
+
+- name: "Okresní soud v Lounech"
+  typSoudu: "os"
+  krajOrg: "KSSCEUL"
+  Org: "OSSCELN"
+
+- name: "Okresní soud v Mostě"
+  typSoudu: "os"
+  krajOrg: "KSSCEUL"
+  Org: "OSSCEMO"
+
+- name: "Okresní soud v Teplicích"
+  typSoudu: "os"
+  krajOrg: "KSSCEUL"
+  Org: "OSSCETP"
+
+- name: "Okresní soud v Ústí nad Labem"
+  typSoudu: "os"
+  krajOrg: "KSSCEUL"
+  Org: "OSSCEUL"
+
+- name: "Okresní soud v České Lípě"
+  typSoudu: "os"
+  krajOrg: "KSSCEUL"
+  Org: "OSSCECL"
+
+# =====================
+# České Budějovice
+# =====================
+
+- name: "Krajský soud v Českých Budějovicích"
+  typSoudu: "os"
+  krajOrg: "KSJICCB"
+  Org: ""
+
+- name: "Okresní soud v Jindřichově Hradci"
+  typSoudu: "os"
+  krajOrg: "KSJICCB"
+  Org: "OSJICJH"
+
+- name: "Okresní soud v Pelhřimově"
+  typSoudu: "os"
+  krajOrg: "KSJICCB"
+  Org: "OSJICPE"
+
+- name: "Okresní soud v Prachaticích"
+  typSoudu: "os"
+  krajOrg: "KSJICCB"
+  Org: "OSJICPT"
+
+- name: "Okresní soud v Písku"
+  typSoudu: "os"
+  krajOrg: "KSJICCB"
+  Org: "OSJICPI"
+
+- name: "Okresní soud ve Strakonicích"
+  typSoudu: "os"
+  krajOrg: "KSJICCB"
+  Org: "OSJICST"
+
+- name: "Okresní soud v Táboře"
+  typSoudu: "os"
+  krajOrg: "KSJICCB"
+  Org: "OSJICTA"
+
+- name: "Okresní soud v Českých Budějovicích"
+  typSoudu: "os"
+  krajOrg: "KSJICCB"
+  Org: "OSJICCB"
+
+- name: "Okresní soud v Českém Krumlově"
+  typSoudu: "os"
+  krajOrg: "KSJICCB"
+  Org: "OSJICCK"
+
+# =====================
+# Městský soud Praha
+# =====================
+
+- name: "Městský soud v Praze"
+  typSoudu: "os"
+  krajOrg: "MSPHAAB"
+  Org: ""
+
+- name: "Obvodní soud pro Prahu 1"
+  typSoudu: "os"
+  krajOrg: "MSPHAAB"
+  Org: "OSPHA01"
+
+- name: "Obvodní soud pro Prahu 2"
+  typSoudu: "os"
+  krajOrg: "MSPHAAB"
+  Org: "OSPHA02"
+
+- name: "Obvodní soud pro Prahu 3"
+  typSoudu: "os"
+  krajOrg: "MSPHAAB"
+  Org: "OSPHA03"
+
+- name: "Obvodní soud pro Prahu 4"
+  typSoudu: "os"
+  krajOrg: "MSPHAAB"
+  Org: "OSPHA04"
+
+- name: "Obvodní soud pro Prahu 5"
+  typSoudu: "os"
+  krajOrg: "MSPHAAB"
+  Org: "OSPHA05"
+
+- name: "Obvodní soud pro Prahu 6"
+  typSoudu: "os"
+  krajOrg: "MSPHAAB"
+  Org: "OSPHA06"
+
+- name: "Obvodní soud pro Prahu 7"
+  typSoudu: "os"
+  krajOrg: "MSPHAAB"
+  Org: "OSPHA07"
+
+- name: "Obvodní soud pro Prahu 8"
+  typSoudu: "os"
+  krajOrg: "MSPHAAB"
+  Org: "OSPHA08"
+
+- name: "Obvodní soud pro Prahu 9"
+  typSoudu: "os"
+  krajOrg: "MSPHAAB"
+  Org: "OSPHA09"
+
+- name: "Obvodní soud pro Prahu 10"
+  typSoudu: "os"
+  krajOrg: "MSPHAAB"
+  Org: "OSPHA10"
+
