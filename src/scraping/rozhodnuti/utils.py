@@ -4,7 +4,10 @@ from datetime import date, datetime
 
 import requests
 
+# This is the base URL from which we obtain the court decisions
 BASE_URL = "https://rozhodnuti.justice.cz/api/opendata"
+
+#
 
 
 def fetch_json(url: str) -> dict:
@@ -72,6 +75,36 @@ def get_days_for_month(year: int, month: int) -> list[date]:
     data = fetch_json(url)
 
     return [datetime.strptime(entry["datum"], "%Y-%m-%d").date() for entry in data]
+
+
+def get_all_available_dates() -> list[date]:
+    """
+    Traverse the API hierarchy and return a list of all available dates
+    with court decisions.
+
+    Returns:
+        list[date]: All available court decision dates.
+    """
+
+    all_dates = []
+    years = get_available_years()
+
+    for year in years:
+        try:
+            months = get_months_for_year(year)
+        except Exception as e:
+            print(f"[{year}] Failed to get months: {e}")
+            continue
+
+        for month in months:
+            try:
+                days = get_days_for_month(year, month)
+                all_dates.extend(days)
+            except Exception as e:
+                print(f"[{year}-{month:02d}] Failed to get days: {e}")
+                continue
+
+    return all_dates
 
 
 def get_decisions_for_day(date_obj: date) -> None:
