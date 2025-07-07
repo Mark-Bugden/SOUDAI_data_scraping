@@ -44,7 +44,7 @@ tests/
    The `rozhodnuti` scraper downloads the JSON metadata of court decisions.
 
 2. **Case Timeline Augmentation (Stage 2)**  
-   The `infosoud` scraper aggregates and preprocesses the JSON metadata for the court decisions, performs some preliminary preprocessing, and saves the processed data as a .csv file. It then takes the preprocessed CSV, enriches it with timeline events (such as initiation date, hearing date, and resolution date) from infosoud.justice.cz, and saves a checkpointed augmented CSV. Checkpointing ensures recovery in case of interruption, as this step can take quite a long time.
+   The `infosoud` scraper aggregates and preprocesses the JSON metadata for the court decisions, performs some preliminary preprocessing, and saves the processed data as a .csv file. It then takes the preprocessed CSV, enriches it with timeline events (such as initiation date, hearing date, and resolution date) from infosoud.justice.cz, and saves the augmented dataset as a .csv file. Checkpointing ensures recovery in case of interruption, as this step can take quite a long time.
 
 3. **Data cleaning and preprocessing (Stage 3)**  
    The preprocessing script performs a final cleaning and preprocessing pass over the dataset to ensure dataset is ready for downstream machine learning tasks.
