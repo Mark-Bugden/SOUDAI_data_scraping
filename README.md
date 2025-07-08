@@ -1,6 +1,6 @@
 # Czech Judicial Decisions Scraper
 
-This repository provides a structured pipeline to collect, augment, and preprocess publicly available Czech court decisions. The project focuses on combining data from two primary sources:
+This repository provides a structured pipeline to collect, augment, and preprocess publicly available information about Czech court decisions. The project focuses on combining data from two primary sources:
 
 - **[Rozhodnuti](https://rozhodnuti.justice.cz)**: for bulk decision metadata
 - **[Infosoud](https://infosoud.justice.cz)**: for case timelines and hearing details
@@ -25,9 +25,18 @@ src/
       utils.py
     infosoud/
       cli.py
-      utils.py
+      utils/
+        checkpointing.py
+        court_data.py
+        filtering.py
+        io.py
+        parsing.py
+        threading.py
+        timeline.py
+        urls.py
   preprocessing/
     components/
+    cli.py
     utils.py
   config/
     paths.py
@@ -36,6 +45,7 @@ tests/
   test_preprocessing.py
   test_scraping_infosoud.py
   test_scraping_rozhodnuti.py
+
 ```
 
 ## Pipeline Overview
