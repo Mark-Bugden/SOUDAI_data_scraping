@@ -2,8 +2,8 @@
 
 This repository provides a structured pipeline to collect, augment, and preprocess publicly available Czech court decisions. The project focuses on combining data from two primary sources:
 
-- **[Rozhodnuti](rozhodnuti.justice.cz)**: for bulk decision metadata
-- **[Infosoud](infosoud.justice.cz)**: for case timelines and hearing details
+- **[Rozhodnuti](https://rozhodnuti.justice.cz)**: for bulk decision metadata
+- **[Infosoud](https://infosoud.justice.cz)**: for case timelines and hearing details
 
 The ultimate goal is to build a clean, reproducible, and machine-learning-ready dataset of court decisions in the Czech Republic.
 
