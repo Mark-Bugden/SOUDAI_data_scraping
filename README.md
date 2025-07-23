@@ -36,13 +36,10 @@ src/
         urls.py
   preprocessing/
     components/
+    utils/
     cli.py
-    utils.py
-  config/
-    paths.py
-    settings.py
+  config.py
 tests/
-  test_preprocessing.py
   test_scraping_infosoud.py
   test_scraping_rozhodnuti.py
 
@@ -72,7 +69,7 @@ poetry install
 
 ## Usage
 
-After installing, run the scraping pipeline in order:
+After installing, run the scraping pipeline in the following order:
 
 1. Download and preprocess court decisions:
 
@@ -104,7 +101,7 @@ poetry run pytest
 
 ## Data Folders
 
-The following folder structure is recommended:
+The following is the default and recommended data folder structure:
 
 - `data/raw/`  
   Raw JSON data files from rozhodnuti.justice.cz

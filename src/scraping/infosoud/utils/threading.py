@@ -1,4 +1,7 @@
-from tqdm import tqdm
+import contextlib
+import io
+
+from inputimeout import TimeoutOccurred, inputimeout
 
 
 class StopFlag:
@@ -14,18 +17,19 @@ class StopFlag:
         return self._stop
 
 
-def listen_for_quit(stop_flag: StopFlag) -> None:
+def listen_for_quit(stop_flag, timeout=1):
     """
-    Listens for the user to type 'q' and press Enter. If detected,
-    sets the stop flag to request graceful shutdown after current chunk.
+    Listens for the user to type 'q' to request an early stop.
+    Runs quietly without interfering with tqdm output.
     """
-    while True:
-        user_input = (
-            input("Type 'q' and press Enter to stop after current chunk: \n")
-            .strip()
-            .lower()
-        )
-        if user_input == "q":
-            tqdm.write("Stop requested. Will exit after current chunk.")
-            stop_flag.request_stop()
-            break
+    print("Press 'q' and Enter at any time to stop after the current chunk.")
+    while not stop_flag.is_requested():
+        try:
+            # Suppress unwanted output from inputimeout
+            with contextlib.redirect_stdout(io.StringIO()):
+                user_input = inputimeout(prompt="", timeout=timeout)
+            if user_input.strip().lower() == "q":
+                stop_flag.request_stop()
+                print("\nStop requested by user.")
+        except TimeoutOccurred:
+            continue

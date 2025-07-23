@@ -1,3 +1,4 @@
+import sys
 import threading
 
 from tqdm import tqdm
@@ -50,8 +51,18 @@ def main():
 
         df_chunk = get_next_pending_chunk(df_preprocessed, done_urls, CHUNK_SIZE)
 
-        if df_chunk.empty:
-            print("All rows processed. Exiting.")
+        print(f"\nRemaining unprocessed rows: {len(df_preprocessed) - len(done_urls)}")
+
+        remaining = df_preprocessed[~df_preprocessed["infosoud_url"].isin(done_urls)]
+
+        if df_chunk.empty or len(remaining) < CHUNK_SIZE:
+            if not remaining.empty:
+                print(
+                    f"\nProcessing final small batch of {len(remaining)} leftover rows."
+                )
+                process_and_update_checkpoint(remaining, CHECKPOINT_CSV_PATH, chunk_bar)
+                overall_bar.update(len(remaining))
+            print("\nAll rows processed. Exiting.")
             break
 
         chunk_bar.reset(total=len(df_chunk))  # reset for this chunk
@@ -67,6 +78,7 @@ def main():
 
     chunk_bar.close()
     overall_bar.close()
+    print("\nFinished processing. Exiting now.", flush=True)
 
 
 if __name__ == "__main__":
